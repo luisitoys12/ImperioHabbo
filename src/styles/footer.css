@@ -1,0 +1,70 @@
+.founders-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Permite que los elementos pasen a otra línea en pantallas pequeñas */
+}
+
+.founder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: auto;
+    position: relative;
+}
+
+.founder-name {
+    position: absolute;
+    top: -10px;
+    /* Ajusta la posición del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder-img {
+    max-width: 100%;
+    /* Para que la imagen no se salga del contenedor */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder:hover .founder-img,
+.founder:hover .founder-name {
+    transform: scale(1.2);
+    /* Hace que el nombre y la imagen crezcan en hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .founders {
+        flex-direction: column;
+        /* Cambia a una disposición en columna en móviles */
+        align-items: center;
+    }
+
+    .founder {
+        width: 80px;
+        /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    .founder-name {
+        font-size: 12px;
+        /* Reduce el tamaño del texto en móviles */
+        top: -10px;
+        /* Ajusta la posición del nombre */
+    }
+}
