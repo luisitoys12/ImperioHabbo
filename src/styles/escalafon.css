@@ -1,0 +1,122 @@
+.ems-container {
+    padding: 4rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 3rem;
+  }
+  
+  .ems-titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1e3a8a;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .ems-titulo::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background: #facc15;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  
+  .ems-piramide {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .ems-nivel {
+    width: 100%;
+    max-width: 600px;
+    opacity: 0;
+    animation: aparecer 0.8s ease-out forwards;
+  }
+  
+  .ems-nivel:nth-child(1) { animation-delay: 0s; }
+  .ems-nivel:nth-child(2) { animation-delay: 0.1s; }
+  .ems-nivel:nth-child(3) { animation-delay: 0.2s; }
+  .ems-nivel:nth-child(4) { animation-delay: 0.3s; }
+  .ems-nivel:nth-child(5) { animation-delay: 0.4s; }
+  .ems-nivel:nth-child(6) { animation-delay: 0.5s; }
+  .ems-nivel:nth-child(7) { animation-delay: 0.6s; }
+  .ems-nivel:nth-child(8) { animation-delay: 0.7s; }
+  .ems-nivel:nth-child(9) { animation-delay: 0.8s; }
+  
+  @keyframes aparecer {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .ems-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    position: relative;
+    border-left: 8px solid #1e40af;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ems-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ems-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ems-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e3a8a;
+    text-transform: uppercase;
+  }
+  
+  .ems-icono {
+    background: radial-gradient(circle, #1e3a8a 60%, #0f172a 100%);
+    border: 3px solid gold;
+    color: #facc15;
+    padding: 2px;
+    font-size: 2.5rem;
+    width: 3rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ems-card p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+  }
+  
+  /* Colores jerárquicos por nivel */
+  
+  .ems-nivel:nth-child(9) .ems-card { border-left-color: #4b5563; } /* Recluta */
+  .ems-nivel:nth-child(8) .ems-card { border-left-color: #3b82f6; } /* Caballería */
+  .ems-nivel:nth-child(7) .ems-card { border-left-color: #2563eb; } /* Suboficial */
+  .ems-nivel:nth-child(6) .ems-card { border-left-color: #1d4ed8; } /* Oficial Élite */
+  .ems-nivel:nth-child(5) .ems-card { border-left-color: #1e40af; } /* Oficial Superior */
+  .ems-nivel:nth-child(4) .ems-card { border-left-color: #1e3a8a; } /* Oficial General */
+  .ems-nivel:nth-child(3) .ems-card { border-left-color: #d97706; } /* GEOM */
+  .ems-nivel:nth-child(2) .ems-card { border-left-color: #b91c1c; } /* DIGEDEF */
+  .ems-nivel:nth-child(1) .ems-card { border-left-color: #a21caf; } /* JEDEFCO */
+  

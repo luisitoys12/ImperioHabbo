@@ -1,0 +1,47 @@
+.habbo-card {
+  background: none; /* sin fondo */
+  border: none; /* sin borde */
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: center;
+  color: #f5f5f5;
+  box-shadow: none;
+  border-radius: 0; /* elimina bordes redondeados */
+}
+
+.habbo-card img {
+  height: 120px;
+  image-rendering: pixelated;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.habbo-card h5 {
+  color: #ffd700;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.habbo-card .motto {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+}
+
+.status {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status.online {
+  color: limegreen;
+  text-shadow: 0 0 4px lime;
+}
+
+.status.offline {
+  color: crimson;
+  text-shadow: 0 0 4px red;
+}

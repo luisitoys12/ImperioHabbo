@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
 import "./styles/App.css";
 
+
+
 const App = () => {
   const [isHidden, setIsHidden] = useState(false);
   let lastScrollTop = 0;

@@ -24,11 +24,10 @@
 .founder-name {
     position: absolute;
     top: -10px;
-    /* Ajusta la posición del texto */
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 5px;
     font-size: 14px;
     transition: transform 0.3s ease-in-out;
@@ -67,4 +66,8 @@
         top: -10px;
         /* Ajusta la posición del nombre */
     }
+}
+
+.liderr{
+   color: white;
 }

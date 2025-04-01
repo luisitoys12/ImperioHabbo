@@ -1,0 +1,131 @@
+/* Contenedor principal */
+.document-container {
+  max-width: 1250px;
+  margin: 100px auto 50px auto;
+  padding: 50px 40px;
+  background-color: #f4f4f1; /* tono neutro estilo papel oficial */
+  color: #1c1c1c;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.8;
+  border: 3px solid #2e3b2f;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  background-image: url('/img/textura-papel.webp'); /* opcional */
+  background-size: cover;
+}
+
+/* Logo del EMS */
+.ems-logo {
+  display: block;
+  margin: 0 auto 30px auto;
+  height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Título principal */
+.document-container h1 {
+  text-align: center;
+  color: #2e3b2f;
+  font-size: 2.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.document-container h2 {
+  text-align: center;
+  color: #5a6b5a;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Secciones con borde lateral */
+.document-container section {
+  margin-bottom: 60px;
+  padding-left: 15px;
+  border-left: 5px solid #3f4e3f;
+  background-color: #fafafa;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos de sección */
+.document-container h3 {
+  color: #3f4e3f;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3f4e3f;
+  padding-bottom: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Subtítulos */
+.document-container h4 {
+  color: #2e3b2f;
+  font-size: 1.15rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Párrafos */
+.document-container p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* Listas */
+.document-container ul {
+  margin-left: 25px;
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.document-container li {
+  margin-bottom: 10px;
+}
+
+/* Enlaces */
+.document-container a {
+  color: #204d20;
+  font-weight: 500;
+  text-decoration: underline dotted;
+}
+
+.document-container a:hover {
+  color: #000;
+  text-decoration: underline solid;
+}
+
+/* Imágenes dentro del documento */
+.doc-image {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(30, 40, 30, 0.3);
+  border: 2px solid #3f4e3f;
+}
+
+/* Íconos decorativos */
+.doc-icon {
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+}
