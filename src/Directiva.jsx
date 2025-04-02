@@ -15,6 +15,7 @@ const directivaPorCargo = {
     "ll-javii-ll",
   ],
   GEOM: [".:xGregx:."],
+  Tecnico: ["MarioRS-10", "7even"],
 };
 
 const nombresBonitos = {
@@ -22,10 +23,11 @@ const nombresBonitos = {
   JEDEFCO: "JEDEFCO (Jefatura de la Defensa en Conjunto)",
   DIGEDEF: "DIGEDEF (Dirección General de la Defensa)",
   GEOM: "GEOM (General Especializado en Operaciones Militares)",
+  Tecnico: "Tecnico (General Especializado en Operaciones Tecnologicas)",
 };
 
 const Directiva = () => {
-  const jerarquia = ["EMCO", "JEDEFCO", "DIGEDEF", "GEOM"];
+  const jerarquia = ["EMCO", "JEDEFCO", "DIGEDEF", "GEOM", "Tecnico"];
 
   return (
     <div className="directiva-container">

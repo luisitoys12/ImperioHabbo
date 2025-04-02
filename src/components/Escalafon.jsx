@@ -281,7 +281,6 @@ const escalafon = [
         sumaTotal: "3528",
         sueldo: "40",
       },
-      // Más sub-rangos de SUBOFICIALES...
     ],
   },
 
@@ -463,22 +462,25 @@ const EscalafonEMS = () => {
     <div className="ems-container">
       <h1 className="ems-titulo">Escalafón del EMS</h1>
       <div className="ems-piramide">
-        {escalafon.map((nivel, index) => (
-          <div
-            key={index}
-            className="ems-nivel"
-            style={{ zIndex: escalafon.length - index }}
-            onClick={() => abrirModal(nivel)} // Abrir el modal al hacer clic en un rango
-          >
-            <div className="ems-card">
-              <div className="ems-header">
-                {nivel.icono}
-                <h2 className="ems-card-title">{nivel.nombre}</h2>
+        {escalafon
+          .slice()
+          .reverse()
+          .map((nivel, index) => (
+            <div
+              key={index}
+              className="ems-nivel"
+              style={{ zIndex: escalafon.length - index }}
+              onClick={() => abrirModal(nivel)} // Abrir el modal al hacer clic en un rango
+            >
+              <div className="ems-card">
+                <div className="ems-header">
+                  {nivel.icono}
+                  <h2 className="ems-card-title">{nivel.nombre}</h2>
+                </div>
+                <p className="ems-card-description">{nivel.descripcion}</p>
               </div>
-              <p className="ems-card-description">{nivel.descripcion}</p>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
 
       {/* Modal */}

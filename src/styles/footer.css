@@ -72,21 +72,37 @@
     color: white;
 }
 
-.discord-container {
+.social-links {
     position: fixed;
+    /* Fijar en la pantalla */
     bottom: 20px;
+    /* Separación desde abajo */
     right: 20px;
-    z-index: 100;
+    /* Separación desde la derecha */
+    display: flex;
+    gap: 15px;
+    /* Espaciado entre los iconos */
 }
 
-.discord-logo {
-    width: 80px;
-    /* Aumenta el tamaño del logo */
-    height: auto;
+.social-links a {
+    display: inline-block;
+}
+
+.discord-logo,
+.twitter-logo {
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease-in-out;
 }
 
-.discord-logo:hover {
-    transform: scale(1.3);
-    /* Aumenta aún más al pasar el mouse */
+.discord-logo,
+.twitter-logo {
+    filter: invert(1);
+    /* Invertir solo Twitter para que se vea en fondo negro */
+}
+
+.discord-logo:hover,
+.twitter-logo:hover {
+    transform: scale(1.1);
+    /* Efecto de crecimiento al pasar el mouse */
 }

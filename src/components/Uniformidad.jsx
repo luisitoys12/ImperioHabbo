@@ -1,33 +1,50 @@
 import React from "react";
-import "../styles/Uniformidad.css"; // Asegúrate de tener un archivo CSS
+import "../styles/Uniformidad.css";
+import { FileText } from "lucide-react";
+
+const documentos = [
+  {
+    nombre: "[EMS] Plataformas de Comunicación",
+    link: "https://docs.google.com/document/d/1UMS2tCKv7IBSH6eXhoe3LvS6NHuOZs85WajjBfXyfwM/edit?tab=t.0",
+  },
+  {
+    nombre: "[EMS] Régimen Disciplinario",
+    link: "https://docs.google.com/document/d/1YLmy7xbPUZpPKFJ_3_gMU2Ck7dK_Mo9SaL4pE86jeDU/edit?tab=t.0",
+  },
+  {
+    nombre: "[EMS] Uniformidad e Imagen",
+    link: "https://docs.google.com/document/d/1TBFJ1s3SIK2SKk0ATUGEfo4rY0Dr6bXpBEvEnrkmJ8o/edit?tab=t.0",
+  },
+  {
+    nombre: "[EMS] Constitución",
+    link: "https://docs.google.com/document/d/18Bi7iWbUfg8Z_QVvLvYXgW-HRl47JaJeBCNkHklhkkE/edit?tab=t.0",
+  },
+  {
+    nombre: "[EMS] Membresía",
+    link: "https://docs.google.com/document/d/1NPcstV4jaDkeA5_tNt9drEWCnYL4b1GvOGLZJhaKW94/edit?tab=t.0",
+  },
+];
 
 const Documentos = () => {
-  const pdfUrl = "/documentos/CBEMS.pdf"; // Ruta del PDF en tu proyecto
-  const driveUrl =
-    "https://docs.google.com/spreadsheets/d/1-DFoOB-ZIdQJ71H_I3Zmo99-0V7kxW2keHAp_pqJKM4/edit?usp=sharing"; // Reemplaza con tu enlace
-
   return (
     <div className="documentos-container">
-      <h1>📂 Acceso a Documentos</h1>
-
-      <div className="documento">
-        <h2>📄 [EMS] Documento de Capacitación para Reclutas</h2>
-        <embed src={pdfUrl} type="application/pdf" className="pdf-viewer" />
-        <a href={pdfUrl} download className="boton-descarga">
-          Descargar PDF
-        </a>
-      </div>
-
-      <div className="documento">
-        <h2>🔗 [EMS] Documento - Escalafón & Departamentos</h2>
-        <a
-          href={driveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="boton-drive"
-        >
-          Ver en Google Drive
-        </a>
+      <h1 className="documentos-title">Documentos EMS</h1>
+      <div className="documentos-card">
+        <ul className="documentos-list">
+          {documentos.map((doc, index) => (
+            <li key={index}>
+              <a
+                href={doc.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="documentos-link"
+              >
+                <FileText size={18} className="icono-documento" />
+                {doc.nombre}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

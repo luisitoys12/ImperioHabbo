@@ -42,20 +42,34 @@ const FounderCard = ({ username }) => {
 const Founders = () => {
   return (
     <footer className="founders-container">
-      <h3 className="liderr">Lider</h3>
+      <h3 className="liderr">Líder</h3>
       <div className="founders">
         <FounderCard username="iDarkGera" />
       </div>
-      <div className="discord-container">
+
+      {/* Contenedor de redes sociales */}
+      <div className="social-links">
         <a
           href="https://discord.gg/b9ajyYWR"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="https://upload.wikimedia.org/wikipedia/en/9/98/Discord_logo.svg"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg
+"
             alt="Únete a nuestro Discord"
             className="discord-logo"
+          />
+        </a>
+        <a
+          href="https://x.com/ejercitoems?s=21"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+            alt="Síguenos en Twitter"
+            className="twitter-logo"
           />
         </a>
       </div>
