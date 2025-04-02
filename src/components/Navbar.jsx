@@ -15,8 +15,16 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links nav-left ${menuOpen ? "active" : ""}`}>
-          <li><a href="#home" className="nav-link">Home</a></li>
-          <li><a href="/escalafon" className="nav-link">Escalafon</a></li>
+          <li>
+            <a href="/directiva" className="nav-link">
+              Directiva
+            </a>
+          </li>
+          <li>
+            <a href="/uniformidad" className="nav-link">
+              Documentos
+            </a>
+          </li>
         </ul>
 
         {/* Logo centrado */}
@@ -27,8 +35,21 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links nav-right ${menuOpen ? "active" : ""}`}>
-          <li><a href="/uniformidad" className="nav-link">Uniformidad</a></li>
-          <li><a href="/directiva" className="nav-link">Directiva</a></li>
+          <li>
+            <a href="/escalafon" className="nav-link">
+              Escalafon
+            </a>
+          </li>
+          <li>
+            <a href="/remuneracion" className="nav-link">
+              Remuneración
+            </a>
+          </li>
+          <li>
+            <a href="/departamentos" className="nav-link">
+              Departamentos
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,0 +1,185 @@
+/* Contenedor principal */
+.remuneracion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 30px;
+    min-height: 100vh;
+    margin-top: 6rem;
+    /* Asegura que el contenedor ocupe toda la altura disponible */
+}
+
+/* Título */
+.remuneracion-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #60a5fa;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Contenedor de la tabla */
+.remuneracion-table-wrapper {
+    width: 100%;
+    max-width: 900px;
+    overflow-x: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+}
+
+/* Tabla */
+.remuneracion-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0f172a;
+    border-radius: 8px;
+    color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Encabezados */
+.remuneracion-table th {
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px;
+    border-bottom: 3px solid #3b82f6;
+}
+
+/* Filas de la tabla */
+.remuneracion-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+/* Colores alternos */
+.remuneracion-table tbody tr:nth-child(odd) {
+    background: #1e293b;
+}
+
+.remuneracion-table tbody tr:nth-child(even) {
+    background: #334155;
+}
+
+/* Efecto hover */
+.remuneracion-table tbody tr:hover {
+    background: #3b82f6;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .remuneracion-table-wrapper {
+        border-radius: 8px;
+    }
+
+    .remuneracion-table thead {
+        display: none;
+    }
+
+    .remuneracion-table,
+    .remuneracion-table tbody,
+    .remuneracion-table tr,
+    .remuneracion-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .remuneracion-table tr {
+        margin-bottom: 10px;
+        border: 2px solid #2563eb;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .remuneracion-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        padding: 10px;
+    }
+
+    .remuneracion-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #60a5fa;
+    }
+}
+
+.rango-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    vertical-align: middle;
+    /* Alineación vertical centrada */
+}
+
+.significados-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.significados-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.significados-box {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.significados-box p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.significados-box strong {
+    color: #2c3e50;
+}
+
+.idea-container {
+    background-color: #fff7d6;
+    border: 2px solid #f1c40f;
+    border-left: 6px solid #f39c12;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.idea-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d68910;
+    margin-bottom: 10px;
+}
+
+.idea-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
