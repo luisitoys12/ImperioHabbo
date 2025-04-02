@@ -1,6 +1,9 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/app.jsx" }
-    ]
+        {
+            "rewrites": [
+              { "source": "/(.*)", "destination": "/index.html" }
+            ]
+          }    ]
   }
   
