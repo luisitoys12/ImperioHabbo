@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/habboCard.css"; // Asegúrate de que la ruta sea correcta
+import "../styles/habbocard.css"; // Asegúrate de que la ruta sea correcta
 
 const HabboCard = ({ username }) => {
   const [user, setUser] = useState(null);
@@ -34,7 +34,6 @@ const HabboCard = ({ username }) => {
       <p className={`status ${user.online ? "online" : "offline"}`}>
         {user.online ? "🟢 En línea" : "🔴 Desconectado"}
       </p>
-
     </div>
   );
 };
