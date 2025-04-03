@@ -10,9 +10,9 @@ const Departamentos = () => {
       administrador: ".:xGregx:.",
     },
     {
-      nombre: "Departamento de Adiestramiento y Especialización Militar (DAEM)",
+      nombre: "Departamento de Entrenamiento y Adiestramiento Militar (DEAM)",
       descripcion:
-        "El Departamento de Adiestramiento y Especialización Militar es el encargado de la instrucción constante del personal, es un espacio enfocado principalmente al preparamiento físico del pelotón esto se logra a través de las marchas militares, entrenamientos especializados o de supervivencia y cursos prácticos sobre el control y manejo de armamento.",
+        "El Departamento de Entrenamiento y Adiestramiento Militar es el encargado de la instrucción constante del personal, es un espacio enfocado principalmente al entrenamiento físico del pelotón. Esto se logra a través de las marchas militares, entrenamientos especializados o de supervivencia y cursos prácticos sobre el control y manejo de armamento.",
       administrador: "-",
     },
     {
