@@ -15,7 +15,7 @@ const directivaPorCargo = {
     "ll-javii-ll",
   ],
   GEOM: [".:xGregx:."],
-  Tecnico: ["MarioRS-10", "7even"],
+  Tecnico: ["Djluisalegre", "7even"],
 };
 
 const nombresBonitos = {
