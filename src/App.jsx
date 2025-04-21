@@ -31,72 +31,106 @@ const App = () => {
         }`}
       >
         <a className="navbar-brand fw-bold" href="#">
-          ⚔️ Habbo Defense
+          🌟 HSpeed Fansite
         </a>
       </nav>
 
       {/* Hero Section */}
       <header className="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
         <h1 className="display-4 animate__animated animate__fadeInDown">
-          ¡Alístate en la Fuerza de Defensa!
+          ¡Bienvenido a HSpeed!
         </h1>
         <p className="lead animate__animated animate__fadeIn animate__delay-1s">
-          Demuestra tu valentía y honor en la mejor simulación militar de Habbo.
+          Tu fansite favorito para todo lo relacionado con Habbo.
         </p>
         <p className="mt-3 animate__animated animate__pulse animate__infinite">
-          ¡Únete ahora!
+          ¡Sigue nuestras actualizaciones y participa en eventos increíbles!
         </p>
       </header>
 
-      {/* Sección de Tarjetas */}
-      {/* Sección de Membresías */}
-      <section className="membresias-container text-center">
-        <h2 className="mb-4">🔱 MEMBRESÍAS [EMS] 🔱</h2>
-        <p className="text-white">
-          Contamos con dos membresías dentro del ejército, disponibles para
-          cualquier miembro a partir de Caballería.
-        </p>
-
+      {/* Sección de Noticias */}
+      <section className="noticias-container text-center mt-5">
+        <h2 className="mb-4">📰 Últimas Noticias</h2>
         <div className="d-flex flex-wrap justify-content-center">
-          {/* Membresía EMS CLUB */}
           <div className="card custom-card animate__animated animate__fadeIn">
             <img
-              src="/emsclub.png"
-              alt="EMS Club Icono"
+              src="/noticia1.png"
+              alt="Noticia 1"
               className="card-img-top"
             />
             <div className="card-body">
-              <h3 className="card-title">[EMS] CLUB</h3>
-              <p className="card-price">💰 Precio: $30</p>
-
-              <ul className="list-unstyled">
-                <li>✅ Accesorios ilimitados</li>
-                <li>✅ Preferencia en día de paga</li>
-                <li>✅ Acceso a zonas exclusivas</li>
-                <li>✅ Guardapaga de 24 horas</li>
-                <li>✅ Canal exclusivo en Discord</li>
-              </ul>
+              <h3 className="card-title">¡Nuevo Evento de Primavera!</h3>
+              <p>
+                Participa en los concursos de primavera y gana premios exclusivos.
+              </p>
             </div>
           </div>
-
-          {/* Membresía Reducción Premium */}
           <div className="card custom-card animate__animated animate__fadeIn animate__delay-1s">
             <img
-              src="/emsreduccion.png"
-              alt="Reducción Premium Icono"
+              src="/noticia2.png"
+              alt="Noticia 2"
               className="card-img-top"
             />
             <div className="card-body">
-              <h3 className="card-title">[EMS] Reducción Premium</h3>
-              <p className="card-price">💰 Precio: $40</p>
-
-              <ul className="list-unstyled">
-                <li>✅ Reducción del 50% de requisitos</li>
-                <li>✅ Guardapaga por 5 días</li>
-              </ul>
+              <h3 className="card-title">¡Nuevos Furnis Disponibles!</h3>
+              <p>
+                Descubre los increíbles furnis en la tienda de Habbo.
+              </p>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Sección de Personalización */}
+      <section className="personalizacion-container text-center mt-5">
+        <h2 className="mb-4">🎨 Personaliza tu Habbo</h2>
+        <p className="text-white">
+          Explora las mejores combinaciones de trajes y diseños de salas.
+        </p>
+        <div className="d-flex flex-wrap justify-content-center">
+          <div className="card custom-card animate__animated animate__fadeIn">
+            <img
+              src="/trajes.png"
+              alt="Trajes"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <h3 className="card-title">¡Ideas de Trajes!</h3>
+              <p>
+                Encuentra los mejores estilos para destacar en la comunidad.
+              </p>
+            </div>
+          </div>
+          <div className="card custom-card animate__animated animate__fadeIn animate__delay-1s">
+            <img
+              src="/salas.png"
+              alt="Salas"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <h3 className="card-title">Decoración de Salas</h3>
+              <p>
+                Inspírate con estas creaciones únicas de la comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sección de Eventos */}
+      <section className="eventos-container text-center mt-5">
+        <h2 className="mb-4">🎉 Próximos Eventos</h2>
+        <ul className="list-group">
+          <li className="list-group-item">
+            Torneo de Batallas de Baile - 25 de Abril
+          </li>
+          <li className="list-group-item">
+            Carrera de Laberintos - 30 de Abril
+          </li>
+          <li className="list-group-item">
+            Fiesta Temática de los 80s - 5 de Mayo
+          </li>
+        </ul>
       </section>
     </div>
   );
