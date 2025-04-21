@@ -15,31 +15,31 @@ import "animate.css";
 import Navbar from "./components/Navbar.jsx";
 import App from "./App.jsx";
 import Footer from "./components/Footer.jsx";
-import Directiva from "./Directiva.jsx";
-import Uniformidad from "./components/Uniformidad.jsx";
-import Escalafon from "./components/Escalafon.jsx";
-import Remuneracion from "./components/Remuneracion.jsx";
-import Departamentos from "./components/Departamentos.jsx";
+import Fansite from "./components/Fansite.jsx";
+import Noticias from "./components/Noticias.jsx";
+import Eventos from "./components/Eventos.jsx";
+import Radio from "./components/Radio.jsx";
+import Staff from "./components/Staff.jsx";
 
 const Home = () => (
-  <h1 className="text-center mt-5">Bienvenido a Habbo Defense</h1>
+  <h1 className="text-center mt-5">Hspeed</h1>
 );
 
 // Componente contenedor para manejar el footer según la ruta
 const Layout = () => {
   const location = useLocation();
-  const mostrarFooter = location.pathname !== "/directiva"; // oculta solo en /directiva
+  const mostrarFooter = location.pathname !== "/staff"; // oculta solo en /staff
 
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/directiva" element={<Directiva />} />
-        <Route path="/remuneracion" element={<Remuneracion />} />
-        <Route path="/uniformidad" element={<Uniformidad />} />
-        <Route path="/escalafon" element={<Escalafon />} />
-        <Route path="/departamentos" element={<Departamentos />} />
+        <Route path="/fansite" element={<Fansite />} />
+        <Route path="/noticias" element={<Noticias />} />
+        <Route path="/eventos" element={<Eventos />} />
+        <Route path="/radio" element={<Radio />} />
+        <Route path="/staff" element={<Staff />} />
       </Routes>
       {mostrarFooter && <Footer />}
     </>
