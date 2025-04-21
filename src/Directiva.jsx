@@ -4,34 +4,25 @@ import HabboCard from "./components/HabboCard";
 import "./styles/directiva.css";
 
 const directivaPorCargo = {
-  EMCO: ["iDarkGera", "-Emmanuel.", "anapao", "Fatimitalove26", "Desty"],
-  JEDEFCO: ["DaignerP"],
-  DIGEDEF: [
-    "guiller63676",
-    ".-Fabiaan-.",
-    "capricolnio",
-    "-ismaaeeel",
-    "pidbulTron",
-    "ll-javii-ll",
-  ],
-  GEOM: [".:xGregx:."],
-  Tecnico: ["Djluisalegre", "7even"],
+  Fundadores: ["iDarkGera", "-Emmanuel."],
+  Administradores: ["anapao", "Fatimitalove26", "Desty"],
+  Moderadores: ["guiller63676", ".-Fabiaan-.", "capricolnio", "-ismaaeeel"],
+  Colaboradores: ["Djluisalegre", "7even"],
 };
 
 const nombresBonitos = {
-  EMCO: "EMCO (Estado Mayor Conjunto)",
-  JEDEFCO: "JEDEFCO (Jefatura de la Defensa en Conjunto)",
-  DIGEDEF: "DIGEDEF (Dirección General de la Defensa)",
-  GEOM: "GEOM (General Especializado en Operaciones Militares)",
-  Tecnico: "Tecnico (General Especializado en Operaciones Tecnologicas)",
+  Fundadores: "Fundadores de HSpeed",
+  Administradores: "Administradores de la Fansite",
+  Moderadores: "Moderadores del Equipo",
+  Colaboradores: "Colaboradores Técnicos",
 };
 
 const Directiva = () => {
-  const jerarquia = ["EMCO", "JEDEFCO", "DIGEDEF", "GEOM", "Tecnico"];
+  const jerarquia = ["Fundadores", "Administradores", "Moderadores", "Colaboradores"];
 
   return (
     <div className="directiva-container">
-      <h2 className="main-title">Equipo Directivo</h2>
+      <h2 className="main-title">Equipo de HSpeed</h2>
       {jerarquia.map((cargo) => (
         <section key={cargo} className={`cargo-section cargo-${cargo}`}>
           <div className="cargo-header">
